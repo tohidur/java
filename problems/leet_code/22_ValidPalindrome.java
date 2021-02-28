@@ -22,16 +22,18 @@ class Solution {
         String tmp = s.toLowerCase();
         int b = 0;
         int e = s.length() - 1;
+
         if (e == 0) return true;
 
-        char sa[] = tmp.toCharArray();
-
         while (b < e) {
-            if (shouldSkip(sa[b])) {
+            char b_char = tmp.charAt(b);
+            char e_char = tmp.charAt(e);
+
+            if (shouldSkip(b_char)) {
                 b++;
-            } else if (shouldSkip(sa[e])) {
+            } else if (shouldSkip(e_char)) {
                 e--;
-            } else if (sa[b] != sa[e]) {
+            } else if (b_char != e_char) {
                 return false;
             } else {
                 b++;
