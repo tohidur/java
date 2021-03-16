@@ -1,5 +1,5 @@
 /*
- * Sort linked list in O(n log n) time complexity and O(1) space complexity
+ * Sort linked list in O(n log n) time complexity and O(log n) space complexity
  */
 
 class ListNode {
