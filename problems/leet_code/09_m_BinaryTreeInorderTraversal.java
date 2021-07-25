@@ -1,3 +1,12 @@
+/*  Binary Tree inorder traversal
+ *
+ * Given a binary tree return the inorder traversal of its nodes' values.
+ *
+ * I: [1, null, 2, 3]
+ * O: [1 , 3, 2]
+ */
+
+
 import java.io.*;
 import java.util.*;
 
