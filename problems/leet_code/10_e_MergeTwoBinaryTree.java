@@ -1,3 +1,12 @@
+/*  Merge two binary trees
+ *
+ *  The merge rule.
+ *  If two nodes overlap, then sum node values up as the new value of the
+ *  merged node. Otherwise, the NOT null node will be used as the node of
+ *  new tree
+ */
+
+
 import java.io.*;
 import java.util.*;
 
