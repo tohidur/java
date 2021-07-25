@@ -1,3 +1,12 @@
+/* Palindrome Linked List
+ *
+ * Given a singly linked list, determine if it is a palindrome
+ *
+ * Do it in O(n) time and O(1) space
+ *
+ */
+
+
 import java.io.*;
 import java.util.*;
 
