@@ -1,3 +1,9 @@
+/* Contains Duplicate
+ *
+ * Give an array of integers, find if the array contains any duplicates.
+ *
+ */
+
 import java.io.*;
 import java.util.*;
 
