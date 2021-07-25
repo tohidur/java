@@ -1,3 +1,19 @@
+/* Two sum II - input array is sorted
+ *
+ * Given an array of integers that is already sorted in ascending order, find
+ * two numbers such that they add up to a specific target number
+ *
+ * The function should return indices of the two numbers, where index1 must be
+ * less than index2.
+ *
+ * - You may assume that each input would have exactly one solution and you
+ *   may not use the same element twice.
+ *
+ * Input: [2, 7, 11, 15], target = 9
+ * Output: [1,2]
+ */
+
+
 import java.io.*;
 import java.util.*;
 
