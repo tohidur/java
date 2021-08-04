@@ -1,3 +1,9 @@
+/* BST successor search
+ * 
+ * find inorder successor of a node
+ */
+
+
 import java.util.LinkedList;
 import java.util.ArrayList;
 
@@ -20,9 +26,24 @@ class Solution {
     static class BinarySearchTree {
         Node root;
 
+
+        Node secondSolution(Node inputNode) {
+            // if Node.right exists
+              // check if left exists
+                // if it exists, go all the way left until null
+            
+            // i'll need to go up
+                // go to parent
+                // check which side you came from
+                // if you came from left side, return parent
+                // if you came from right side, go up again
+        }
+
         Node findInOrderSuccessor(Node inputNode) {
             if (root == null)
                 return null;
+
+            return secondSolution(inputNode);
 
             LinkedList<Node> stack = new LinkedList<>();
             ArrayList<Node> result = new ArrayList<>();
