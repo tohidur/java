@@ -16,12 +16,26 @@
 class Solution {
     public boolean validPalindrome(String str) {
         int s=0, e=str.length() - 1, pe = 0;
+
+        boolean del_s = false;
+        boolean del_e = false;
+ 
         while (s <= e) {
             if (str.charAt(s) == str.charAt(e)) {
                 s++;
                 e--;
             } else {
-                break;
+                if (!del_s) {
+                    pe = 0;
+                    s = 1;
+                    del_s = true;
+                } else if (!del_e) {
+                    pe = 0;
+                    e = str.length() - 1;
+                    del_e = true;
+                } else {
+                    break;
+                }
             }
 
             pe += 2;
@@ -34,7 +48,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        String s = "abda";
+        String s = "eade";
         Solution sol = new Solution();
         System.out.println(sol.validPalindrome(s));
     }
